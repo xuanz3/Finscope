@@ -1,7 +1,7 @@
 # FinScope
 
 **Market intelligence & historical trading simulation**  
-Project owner: Xuanze Chen · Version 1.0.0-rc.2
+Project owner: Xuanze Chen · Version 1.0.0-rc.5
 
 FinScope is a local-first Flutter financial research workspace. It does not connect to a brokerage or execute real trades.
 
@@ -34,3 +34,17 @@ This archive integrates the previous candidate and UI patches and adds new sourc
 ## GitHub
 
 `PUBLISH_TO_GITHUB.command` runs the quality gates before publishing a genuine feature branch to `xuanz3/Finscope`. It does not fabricate timestamps or automatically merge. Review the pull request and CI before merging. Keep user data and secrets outside the repository.
+
+## Terminal redesign (RC4)
+
+The Owari-inspired workspace introduces a compact navigation rail and workspace tabs, a flat account summary, striped market tables, relative performance charts and diverging rankings computed from the loaded data. Page and chart transitions follow the reduced-motion system preference. This revision does not change the trading engine or database schema. It has not yet been compiled on a Flutter host.
+
+## Experience update
+
+See [Experience RC4](docs/EXPERIENCE_RC4.md) and [Editorial assets](docs/EDITORIAL_ASSETS.md). Local account options are explicitly simulated, not OAuth or SMS. Existing workspace data is shared by local profiles.
+
+## Launch guide
+
+See [release and website setup](docs/LAUNCH.md).
+
+Website deployment: Cloudflare Pages (production branch `main`, static output directory `site`). Installer downloads are served by published GitHub Releases.
