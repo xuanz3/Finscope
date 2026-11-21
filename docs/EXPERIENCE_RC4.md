@@ -1,4 +1,4 @@
-# FinScope Experience RC4
+# Finscope Experience RC4
 
 - One level of primary navigation; context header and local account access.
 - Original navigation glyphs, hover elevation, pressed feedback, crossfade/slide transitions, interpolated market values and chart arrival.

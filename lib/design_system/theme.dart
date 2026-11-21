@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// FinScope terminal tokens. Brand colors are accents, not body-text colors.
+/// Finscope terminal tokens. Brand colors are accents, not body-text colors.
 abstract final class FinTheme {
   static const slate = Color(0xFF232F38);
   static const burgundy = Color(0xFF872A35);

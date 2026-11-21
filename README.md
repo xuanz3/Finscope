@@ -1,13 +1,13 @@
-# FinScope
+# Finscope
 
 **Market intelligence & historical trading simulation**  
 Project owner: Xuanze Chen · Version 1.0.0-rc.5
 
-FinScope is a local-first Flutter financial research workspace. It does not connect to a brokerage or execute real trades.
+Finscope is a local-first Flutter financial research workspace. It does not connect to a brokerage or execute real trades.
 
 ## Run on macOS
 
-Extract this project into a new directory. With Flutter, Xcode and CocoaPods installed, double-click `SETUP_AND_RUN.command` (or execute `bash SETUP_AND_RUN.command` in Terminal). It generates platform runners, resolves dependencies, analyzes, runs the complete test suite, builds a release application, creates `dist/FinScope-macOS.dmg`, and launches the app. If a gate fails, it stops instead of distributing an unverified build. This archive does not contain precompiled binaries.
+Extract this project into a new directory. With Flutter, Xcode and CocoaPods installed, double-click `SETUP_AND_RUN.command` (or execute `bash SETUP_AND_RUN.command` in Terminal). It generates platform runners, resolves dependencies, analyzes, runs the complete test suite, builds a release application, creates `dist/Finscope-macOS.dmg`, and launches the app. If a gate fails, it stops instead of distributing an unverified build. This archive does not contain precompiled binaries.
 
 ## Workspace
 

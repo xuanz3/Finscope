@@ -5,7 +5,7 @@ on:
       tag:
         description: 'New release candidate tag (example: v1.0.0-rc.5)'
         required: true
-        default: 'v1.0.0-rc.5'
+        default: 'v1.0.0-rc.7'
 permissions:
   contents: read
 jobs:
@@ -17,7 +17,7 @@ jobs:
         with: {channel: stable}
       - run: bash scripts/build.sh macos
       - uses: actions/upload-artifact@v4
-        with: {name: macos, path: dist/FinScope-macOS.dmg, if-no-files-found: error}
+        with: {name: macos, path: dist/Finscope-macOS.dmg, if-no-files-found: error}
   android:
     runs-on: ubuntu-latest
     steps:
@@ -29,7 +29,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y libsqlite3-0
       - run: bash scripts/build.sh android
       - uses: actions/upload-artifact@v4
-        with: {name: android, path: dist/FinScope-Android.apk, if-no-files-found: error}
+        with: {name: android, path: dist/Finscope-Android.apk, if-no-files-found: error}
   windows:
     runs-on: windows-latest
     steps:
@@ -39,7 +39,7 @@ jobs:
       - run: choco install innosetup -y --no-progress
       - run: powershell -ExecutionPolicy Bypass -File scripts/build-windows.ps1
       - uses: actions/upload-artifact@v4
-        with: {name: windows, path: dist/FinScope-Windows-Setup.exe, if-no-files-found: error}
+        with: {name: windows, path: dist/Finscope-Windows-Setup.exe, if-no-files-found: error}
   ios-build-check:
     runs-on: macos-latest
     steps:
@@ -64,6 +64,6 @@ jobs:
           set -euo pipefail
           [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-rc\.[0-9]+$ ]]
           cd packages
-          for name in FinScope-macOS.dmg FinScope-Android.apk FinScope-Windows-Setup.exe; do test -s "$name"; done
-          sha256sum FinScope-* > SHA256SUMS.txt
-          gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --prerelease --title "FinScope $RELEASE_TAG" --notes 'Preview release. macOS and Windows installers are not notarized/code-signed for public distribution; Android uses development signing unless configured separately. Verify on target devices before publishing. iOS distribution is not included. Historical and sample data only; no real trades.' FinScope-* SHA256SUMS.txt
+          for name in Finscope-macOS.dmg Finscope-Android.apk Finscope-Windows-Setup.exe; do test -s "$name"; done
+          sha256sum Finscope-* > SHA256SUMS.txt
+          gh release create "$RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --draft --prerelease --title "Finscope $RELEASE_TAG" --notes 'Preview release. macOS and Windows installers are not notarized/code-signed for public distribution; Android uses development signing unless configured separately. Verify on target devices before publishing. iOS distribution is not included. Historical and sample data only; no real trades.' Finscope-* SHA256SUMS.txt

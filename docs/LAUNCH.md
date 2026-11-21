@@ -1,4 +1,4 @@
-# FinScope release candidate 5
+# Finscope release candidate 5
 
 Project owner: Xuanze Chen.
 
@@ -36,4 +36,4 @@ Connect `xuanz3/Finscope` in Cloudflare Workers & Pages > Create application > P
 
 Cloudflare assigns the production hostname after deployment. Future changes merged into main deploy automatically. No GitHub Pages configuration or Cloudflare API credentials are required in the repository.
 
-The download dialog reads the public GitHub Releases API and downloads the actual published assets using their `browser_download_url`. The expected asset names are `FinScope-macOS.dmg`, `FinScope-Windows-Setup.exe`, and `FinScope-Android.apk`. If no public release is available, download buttons remain disabled. A draft release must first be reviewed and published. No installers are committed to Git or hosted on Cloudflare Pages.
+The download dialog reads the public GitHub Releases API and downloads the actual published assets using their `browser_download_url`. The expected asset names are `Finscope-macOS.dmg`, `Finscope-Windows-Setup.exe`, and `Finscope-Android.apk`. If no public release is available, download buttons remain disabled. A draft release must first be reviewed and published. No installers are committed to Git or hosted on Cloudflare Pages.

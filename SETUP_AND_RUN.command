@@ -10,6 +10,6 @@ flutter build macos --release
 app=$(find build/macos/Build/Products/Release -maxdepth 1 -name '*.app' -print -quit)
 [[ -n "$app" ]] || { echo 'Build succeeded but app bundle not found.'; exit 1; }
 mkdir -p dist
-hdiutil create -volname FinScope -srcfolder "$app" -ov -format UDZO dist/FinScope-macOS.dmg
-printf '\nBuilt package: %s/dist/FinScope-macOS.dmg\n' "$PWD"
+bash scripts/package-macos.sh "$app"
+printf '\nBuilt package: %s/dist/Finscope-macOS.dmg\n' "$PWD"
 open "$app"

@@ -1,6 +1,6 @@
 # Editorial assets
 
-The source package includes 15 original 1600 × 900 JPEG illustrations for offline use. `scripts/fetch-editorial.sh` optionally replaces these with curated Pexels images on macOS (no network needed to use the bundled illustrations). Download failures preserve the original file. Images are thematic context, not documentary evidence of the named historical event, not real market quotes, and do not imply that a depicted person or organization endorses FinScope. See https://www.pexels.com/license/ for license terms. Keep these source credits when distributing.
+The source package includes 15 original 1600 × 900 JPEG illustrations for offline use. `scripts/fetch-editorial.sh` optionally replaces these with curated Pexels images on macOS (no network needed to use the bundled illustrations). Download failures preserve the original file. Images are thematic context, not documentary evidence of the named historical event, not real market quotes, and do not imply that a depicted person or organization endorses Finscope. See https://www.pexels.com/license/ for license terms. Keep these source credits when distributing.
 
 | Asset | Pexels image page | Creator |
 |---|---|---|
