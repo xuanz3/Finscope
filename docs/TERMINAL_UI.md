@@ -1,4 +1,4 @@
-# FinScope terminal workspace
+# Finscope terminal workspace
 
 Project owner: Xuanze Chen
 

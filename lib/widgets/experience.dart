@@ -21,5 +21,5 @@ class FinScopeMark extends StatelessWidget {
   const FinScopeMark({super.key, this.size = 24});
   final double size;
   @override
-  Widget build(BuildContext context) => Image.asset('assets/brand/mark.png', width: size, height: size, fit: BoxFit.contain, semanticLabel: 'FinScope');
+  Widget build(BuildContext context) => Image.asset('assets/brand/mark.png', width: size, height: size, fit: BoxFit.contain, semanticLabel: 'Finscope');
 }

@@ -1,4 +1,4 @@
-name: FinScope CI
+name: Finscope CI
 on:
   push:
     branches: [main, develop, 'feature/**', 'fix/**']

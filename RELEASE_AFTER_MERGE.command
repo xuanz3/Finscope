@@ -2,7 +2,7 @@
 set -euo pipefail
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 repo=xuanz3/Finscope
-tag=v1.0.0-rc.5
+tag=v1.0.0-rc.7
 command -v gh >/dev/null || { echo 'Install GitHub CLI: brew install gh'; exit 1; }
 gh auth status
 # Verify merged launch code, not an obsolete PR.
